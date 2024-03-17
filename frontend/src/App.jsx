@@ -6,12 +6,12 @@ import Signup from "./Components/Signup";
 function App() {
   return (
     <>
-    \
+    
       <Routes>
         <Route path='/' element={<><Header />
       <Post/></>}></Route>
-        <Route path="/login" element={<Login/>}></Route>
-        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/login" element={<> <Header/><Login/></>}></Route>
+        <Route path="/signup" element={<> <Header/><Signup/></>}></Route>
       </Routes>
     </>
   );
